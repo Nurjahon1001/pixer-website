@@ -1,0 +1,40 @@
+html {
+  max-width: 1300px;
+  height: 3910px;
+  margin: 0 auto;
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @extend %font-prim;
+  @include font($size: 1.6rem, $height: 2.6rem, $weight: normal);
+}
+
+h1 {
+  @extend %font-prim;
+  @include font($height: 3.9rem, $size: 3rem);
+  @include media-mobile {
+      @include font($height: 4.2rem, $size: 3.2rem);
+  }
+}
+
+h2 {
+  @include font($size: 2.4rem, $height: 3.1rem,  $weight: 700);
+  @include media-mobile {
+      @include font($height: 3.3rem, $size: 2.4rem);
+  }
+}
+
+h3 {
+  @include font($size: 2rem, $height: 2.6rem, $weight: 700);
+  @include media-mobile {
+      @include font($height: 3.1rem, $size: 2.1rem);
+  }
+}

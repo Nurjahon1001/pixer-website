@@ -1,0 +1,30 @@
+.services {
+  padding: 30px 0 113px 0;
+  text-align: center;
+}
+
+.service__title {
+  margin: 2.6rem 0 1.4rem;
+}
+
+.services__description {
+  width: 63%;
+  line-height: 2.5rem;
+  margin: auto;
+  padding-right: 1px;
+}
+
+.services-container{
+  padding-top: 17px;
+}
+
+.service{
+  padding-top: 3rem;
+  > .services__title{
+    padding-top: 0.9rem;
+  }
+  > .services__text{
+    padding-top: 1.5rem;
+    padding-bottom: 2.2rem;
+  }
+}

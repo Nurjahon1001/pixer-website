@@ -1,7 +1,8 @@
 .header {
+  height: 56px;
   background: $color-light;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-  padding: 8px 0;
+  padding-top: 8px
 }
 
 .header__wrapper {
@@ -19,11 +20,7 @@
   }
 }
 
-.nav_btn_div{
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
+
 
 .header__logo{
   padding-top: 6px;

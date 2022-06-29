@@ -77,7 +77,7 @@ h3 {
   padding: 8px 16px;
   font-style: normal;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 2.4rem;
   border-radius: 5px;
   cursor: pointer;
@@ -94,10 +94,8 @@ h3 {
   padding-right: 4px;
 }
 
-.buyurtma_button,
-.home_button,
-.portfolio_button {
-  font-size: 1.6rem;
+.button_phone_number {
+  font-size: 1.5rem;
 }
 
 .link-button {
@@ -179,10 +177,10 @@ h3 {
 }
 
 .wrapper {
-  max-width: 84.6%;
+  max-width: 1100px;
   margin: 0 auto;
 }
-@media (max-width: 84.6%) {
+@media (max-width: 1100px) {
   .wrapper {
     padding: 0 46px;
   }
@@ -194,9 +192,10 @@ h3 {
 }
 
 .header {
+  height: 56px;
   background: #ffffff;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-  padding: 8px 0;
+  padding-top: 8px;
 }
 
 .header__wrapper {
@@ -214,12 +213,6 @@ h3 {
   .header__button {
     display: none;
   }
-}
-
-.nav_btn_div {
-  display: flex;
-  align-items: center;
-  gap: 24px;
 }
 
 .header__logo {
@@ -266,13 +259,63 @@ h3 {
   margin-left: 3px;
 }
 
+.footer {
+  height: 338px;
+  background: #191919;
+  color: #ffffff;
+}
+
+.footer__wrapper {
+  display: flex;
+  padding: 55px 0;
+}
+
+.footer__wrapper div:first-child {
+  flex-basis: 320px;
+  margin-right: 100px;
+}
+
+.footer-navigation__title {
+  padding-bottom: 15px;
+}
+
+.footer-navigation__text {
+  line-height: 24px;
+}
+
+.footer-navigation__column {
+  margin-right: 87px !important;
+}
+
+ul.footer-navigation__links > li {
+  list-style: none;
+  padding-bottom: 6px;
+}
+
+.footer-nav_link,
+.footer-navigation__link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-navigation__link > img {
+  vertical-align: sub;
+  margin-right: 4px;
+}
+
 .navigation {
   display: flex;
-  gap: 32.9px;
+  gap: 32.5px;
 }
 
 .navigation__link {
   list-style: none;
+}
+
+.nav_btn_div {
+  display: flex;
+  align-items: center;
+  gap: 25px;
 }
 
 .navigation__link a {
@@ -316,7 +359,6 @@ h3 {
 article {
   cursor: pointer;
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 34px;
   margin-bottom: 4.8rem;
@@ -324,7 +366,7 @@ article {
 }
 
 article.block-right {
-  gap: 60px;
+  gap: 83px;
 }
 
 article.block-right > img {
@@ -332,7 +374,7 @@ article.block-right > img {
 }
 
 .portfolio__name {
-  margin-bottom: 6px;
+  padding-bottom: 6px;
   text-align: left;
   flex-grow: 1;
 }
@@ -346,9 +388,14 @@ article.block-right > img {
   text-align: left;
 }
 
+.block-right > .portfolio__content > .portfolio__name {
+  padding-top: 11px;
+}
+
 .block-right > .portfolio__content > .portfolio__text {
   max-width: 100%;
-  margin-left: 5px;
+  margin-left: 6px;
+  margin-bottom: 11px;
 }
 
 article:nth-child(3) {
@@ -364,11 +411,10 @@ article:nth-child(4) > .portfolio__content > .portfolio__text {
   padding-top: 4px;
 }
 
-article:last-child {
-  padding-right: 35px;
-}
-article:last-child > .portfolio__content > .portfolio__text {
-  padding-left: 1px;
+article:last-child.block-left > .portfolio__content > .portfolio__text,
+article:nth-child(3).block-left > .portfolio__content > .portfolio__text {
+  max-width: 100%;
+  padding-left: 3px;
 }
 
 .services {
@@ -458,4 +504,74 @@ article:last-child > .portfolio__content > .portfolio__text {
     max-width: 100%;
     margin-bottom: 16px;
   }
+}
+
+section.order {
+  height: 543px;
+  background: #00BAFC;
+  margin-top: 56px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.order__wrapper {
+  padding: 56px 100px;
+}
+
+.order__description {
+  width: 78%;
+  line-height: 2.5rem;
+  margin: 13.5px auto;
+  padding-right: 1px;
+}
+
+.order__form {
+  width: 348px;
+  height: 304px;
+  background: #ffffff;
+  padding: 24px;
+  margin: auto;
+  margin-top: 24px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.input {
+  width: 300px;
+  height: 56px;
+  background: #F3F3F3;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 5px;
+  border: none;
+}
+
+.service_selection {
+  padding-left: 10px !important;
+  letter-spacing: 0.35px !important;
+}
+
+input::-moz-placeholder {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.6px;
+}
+
+input:-ms-input-placeholder {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.6px;
+}
+
+input::placeholder,
+.service_selection {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.6px;
 }/*# sourceMappingURL=styles.css.map */

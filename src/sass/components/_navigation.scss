@@ -1,10 +1,16 @@
 .navigation {
   display: flex;
-  gap: 32.9px;
+  gap: 32.5px;
 }
 
 .navigation__link {
   list-style: none;
+}
+
+.nav_btn_div{
+  display: flex;
+  align-items: center;
+  gap: 25px;
 }
 
 .navigation__link a{

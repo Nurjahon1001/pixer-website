@@ -1,6 +1,7 @@
 .wrapper {
   max-width: $content-width;
   margin: 0 auto;
+  // padding-left: 17px;
   @include media-laptop {
       padding: 0 46px;
   }

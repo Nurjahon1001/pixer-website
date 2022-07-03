@@ -1,5 +1,9 @@
 .portfolio {
   text-align: center;
+
+  @include media-tablet {
+    padding-top: 30px
+  }
 }
 
 .portfolio__title {
@@ -11,11 +15,19 @@
   line-height: 2.5rem;
   margin: auto;
   padding-right: 1px;
+
+  @include media-tablet {
+    width: 90%;
+  }
 }
 
 .portfolio-wrapper {
   max-width: 76%;
   margin: 23px auto;
+
+  @include media-tablet {
+    max-width: 100%;
+  }
 }
 
 article {
@@ -35,6 +47,27 @@ article.block-right>img {
   padding-right: 2px;
 }
 
+@include width-650px {
+  article>img {
+    width: 250px;
+  }
+}
+
+@include width-550px {
+  article>img {
+    width: 200px;
+  }
+
+  .portfolio__content h3 {
+    font-size: 16px;
+  }
+
+  .portfolio__content p,
+  .portfolio__description {
+    font-size: 15px;
+  }
+}
+
 .portfolio__name {
   padding-bottom: 6px;
   text-align: left;
@@ -50,7 +83,7 @@ article.block-right>img {
   text-align: left;
 }
 
-.block-right>.portfolio__content>.portfolio__name{
+.block-right>.portfolio__content>.portfolio__name {
   padding-top: 11px;
 }
 
@@ -64,6 +97,7 @@ article:nth-child(3) {
   padding-right: 24px;
   margin-bottom: 4.6rem;
   gap: 32px;
+
   >.portfolio__content>.portfolio__text {
     padding-left: 4px;
   }
@@ -73,20 +107,31 @@ article:nth-child(4)>.portfolio__content>.portfolio__text {
   padding-top: 4px;
 }
 
-// article:last-child {
-//   >.portfolio__content {
-//     margin-top: 22px !important;
-//     >.portfolio__text {
-//       padding-left: 3px;
-//     }
-//   }
-// }
+article:last-child.block-left>.portfolio__content,
+article:nth-child(3).block-left>.portfolio__content {
 
-article:last-child.block-left > .portfolio__content,
-article:nth-child(3).block-left > .portfolio__content {
-  // padding-top:10px !important;
-  > .portfolio__text{
+  >.portfolio__text {
     max-width: 100%;
     padding-left: 3px;
   }
+}
+
+@include width-450px {
+
+  article {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  article.block-right {
+    gap: 10px;
+    flex-direction: column-reverse;
+  }
+
+
+.portfolio__text,
+.portfolio__name {
+  text-align: center;
+}
 }

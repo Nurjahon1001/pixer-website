@@ -1,5 +1,8 @@
 .layout-4-column {
   @include columns($width: 29%);
+  @include media-tablet {
+    display: block;
+  }
 }
 
 .layout-2-column {

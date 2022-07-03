@@ -4,10 +4,18 @@ section.order {
   margin-top: 56px;
   text-align: center;
   color: $color-light;
+  @include media-mobile {
+    height: auto;
+    font-size: 14px;
+  }
 }
 
 .order__wrapper {
   padding: 56px 100px;
+
+  @include width-550px {
+    padding: 56px 40px;
+  }
 }
 
 .order__description {
@@ -15,6 +23,10 @@ section.order {
   line-height: 2.5rem;
   margin: 13.5px auto;
   padding-right: 1px;
+
+  @include media-tablet{
+    width: 100%;
+  }
 }
 
 .order__form {
@@ -26,6 +38,9 @@ section.order {
   margin-top: 24px;
   border-radius: 5px;
   text-align: center;
+  @include media-mobile {
+    width: 100%;
+  }
 }
 
 .input {
@@ -36,6 +51,9 @@ section.order {
   margin-bottom: 16px;
   border-radius: 5px;
   border: none;
+  @include media-mobile {
+    width: 90%;
+  }
 }
 
 .service_selection{
@@ -51,4 +69,7 @@ input::placeholder,
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0.6px;
+  @include media-mobile {
+    font-size: 14px;
+  }
 }

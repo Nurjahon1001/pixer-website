@@ -1,6 +1,6 @@
 html {
   max-width: 1300px;
-  height: 3910px;
+  // height: 3910px;
   margin: 0 auto;
   font-size: 10px;
   scroll-behavior: smooth;
@@ -21,7 +21,7 @@ h1 {
   @extend %font-prim;
   @include font($height: 3.9rem, $size: 3rem);
   @include media-mobile {
-      @include font($height: 4.2rem, $size: 3.2rem);
+      @include font($height: 3.2rem, $size: 2.2rem);
   }
 }
 

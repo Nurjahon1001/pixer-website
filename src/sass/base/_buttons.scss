@@ -12,12 +12,20 @@
   border: none;
 }
 
+.button:hover{
+  background: $color-primary-light;
+
+}
+
 .services__buttons{
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.6rem;
   padding-right: 4px;
+  @include media-mobile {
+    flex-direction: column;
+  }
 }
 
 .button_phone_number{

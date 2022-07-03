@@ -34,8 +34,32 @@
   }
 }
 
+@mixin width-825px {
+  @media (max-width: $width-825px) {
+    @content;
+  }
+}
+
 @mixin media-tablet {
   @media (max-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin width-650px {
+  @media (max-width: $width-650px) {
+    @content;
+  }
+}
+
+@mixin width-550px {
+  @media (max-width: $width-550px) {
+    @content;
+  }
+}
+
+@mixin width-450px {
+  @media (max-width: $width-450px) {
     @content;
   }
 }
